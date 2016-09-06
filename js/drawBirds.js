@@ -1,4 +1,5 @@
-//创建小鸟对象
+define(function(require,exports,module){
+      //创建小鸟对象
 function createBirds(ctx,imgObj,x, y,speed,a) {
     this.ctx = ctx;
     this.imgObj = imgObj;
@@ -32,3 +33,6 @@ createBirds.prototype.updateBirds = function (dt) {
     this.speed = this.speed + this.a * dt;
     this.y = this.y + this.speed * dt;
 }
+
+module.exports = createBirds;
+})

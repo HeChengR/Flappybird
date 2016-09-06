@@ -1,3 +1,4 @@
+define(function(require,exports,module){
 /**
  * Created by Administrator on 2016/8/21.
  */
@@ -26,3 +27,6 @@ function imageLoad(imgUrls, callback) {
         })(name, imgEl);
     }
 }
+
+module.exports = imageLoad;
+})

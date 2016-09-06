@@ -1,3 +1,4 @@
+define(function(require,exports,module){
 /**
  * Created by Administrator on 2016/8/21.
  */
@@ -40,3 +41,6 @@ CreatePipe.prototype.updatePipe = function (dt) {
 CreatePipe.prototype.hitTest = function (x, y) {
      return (x > this.x && x < this.x + 52) && (!(y > this.Pipeheight && y < this.Pipeheight + 150));
 }
+
+module.exports = CreatePipe;
+})

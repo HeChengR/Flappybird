@@ -1,3 +1,4 @@
+define(function(require,exports,module){
 /**
  * Created by Administrator on 2016/8/21.
  */
@@ -31,3 +32,5 @@ CreateSky.prototype.updateSky = function (dt) {
         this.x = this.x + 800 * CreateSky.count;
     }
 }
+module.exports = CreateSky;
+})

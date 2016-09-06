@@ -1,3 +1,4 @@
+define(function(require,exports,module){
 /**
  * Created by Administrator on 2016/8/21.
  */
@@ -22,3 +23,6 @@ CreateLand.prototype.updateLand = function (dt) {
     }
 
 }
+
+module.exports = CreateLand;
+})
